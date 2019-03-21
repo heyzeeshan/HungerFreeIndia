@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<script>
+function radA(x) {
+   if (x.checked) {
+     window.open("ngo.html");
+   }
+ }
+
+ function radB(x) {
+   if (x.checked) {
+     window.open("indiviual.html");
+   }
+   }
+   function radC(x) {
+   if (x.checked) {
+     window.open("resturant.html");
+   }
+ }
+ 
+</script>
+</head>
+<body>
+
+<div class="header">
+  <ul> 
+      <button id="b2"><li><a href="homepage.html">HOME</a></li></button>
+      <button id="b2"><li><a href="aboutus.html">ABOUT US</a></li></button>
+      <button id="b2"><li><a href="contactus.html">CONTACT US</a></li></button>
+  </ul>
+</div>
+
+
+<div class="col-3" style="margin-left:40%; height:400px;">
+    <h1>Login</h1>
+      <form action="" method="post" name="Login">
+          Who are you?<br/>
+      <input type="radio" onchange="radA(this)" name="cate" id="A">NGO<br/>
+          <input type="radio" onchange="radB(this)" name="cate" id="B">Indiviual<br/>
+          <input type="radio" onchange="radC(this)" name="cate" id="C">Restuarant<br/>
+            </form>
+
+</div>
+    
+<div class="col-12 footer">
+    Copyright&copy;<br/>
+    By: Mohammed Zeeshan Jagirdar<br/>
+    M.H Saboo Siddik Collge of Engineering
+</div>    
+</body>
+</html>

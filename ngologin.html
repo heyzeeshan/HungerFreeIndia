@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<script>
+  function validate()
+        {
+            if(document.getElementById("uid").value == "zeeshan" && document.getElementById("pass").value == "1234")
+            {
+                alert( "Login successfull" );
+                location.href="profile.html";
+            }
+            else
+            {
+                location.href="homepage.html";
+                alert("Username or password is Wrong, Re-enter")
+            }
+        }
+
+ 
+</script>
+</head>
+<body>
+
+<div class="header">
+  <ul> 
+      <button id="b2"><li><a href="homepage.html">HOME</a></li></button>
+      <button id="b2"><li><a href="aboutus.html">ABOUT US</a></li></button>
+      <button id="b2"><li><a href="contactus.html">CONTACT US</a></li></button>
+  </ul>
+</div>
+
+
+<div class="col-3">
+    <h1>NGO Login</h1>
+      <form action="" method="post" name="Login"><br /><br />
+            UserName:
+            <input type="text" class="pass1" id="uid" size="30" placeholder=" Username"><br /><br />
+            Password:
+            &nbsp;&nbsp;<input class="pass1" id="pass" size="30" type="password" placeholder=" password"><br /><br />
+                <input id="b1" type="button" value="SignIn" name="SignIn" onclick="javascript:validate()">
+ 
+            </form>
+</div>
+    
+<div class="col-12 footer">
+    Copyright&copy;<br/>
+    By: The Team Error <br/>
+    M.H Saboo Siddik Collge of Engineering
+</div>    
+</body>
+</html>

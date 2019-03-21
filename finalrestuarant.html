@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+ 	<script type="text/javascript">
+ 		function login(){
+            if(document.getElementById("uid").value == "sitara" && document.getElementById("pass").value == "000")
+            {
+                alert( "Login successfull" );
+				
+ 			window.open("restprofile.php");
+            }
+            else
+            {
+                location.href="finalrestaurant.php";
+                alert("Username or password is Wrong, Re-enter")
+            }
+        }
+		
+	
+ 		
+ 		function reg()
+ 		{
+ 			window.open("resturant.html");
+ 		}
+ 	</script>
+</head>
+<body>
+<div style="height:500px;">
+<div class="header">
+  <ul>
+      <button id="b2"><li><a href="homepage.html">Why Hungry?</a></li></button>
+      <button id="b2"><li><a href="aboutus.html">ABOUT US</a></li></button>
+      <button id="b2"><li><a href="contactus.html">CONTACT US</a></li></button>
+  </ul>
+</div>
+<div class="col-3" style="margin-left:560px">
+ 	<form action="" method="POST" name="submit">
+ <h2>Resturant Login</h2>
+            UserName: <input type="text"   size="30" name="uid" id="uid"></br></br>
+            Password: &nbsp;&nbsp;<input   size="30" type="password" name="Pass" id="pass"><br/><br/> 
+                <button id="b1"  value="login" onclick="javascript:login()">Login</button>
+          <button id="b1" value="SignUp" onclick="javascript:reg()">SignUp</button>
+      </form>
+      </div>      
+ 
+
+</div>
+<div class="col-12 footer">
+    Copyright&copy;<br/>
+    By: The Team Error<br/>
+    M.H Saboo Siddik Collge of Engineering
+</div>    
+
+</body>
+</html>
